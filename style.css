@@ -1,0 +1,82 @@
+.container {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.clock {
+    height: 300px;
+    width: 300px;
+    border: 5px solid #65EEB7;
+    border-radius: 50%;
+    position: relative;
+}
+
+.sec {
+    height: 1px;
+    width: 162px;
+    /* background: #FF5722; */
+    position: absolute;
+    top: calc(50% - .5px);
+    right: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: ease 1s;
+}
+
+.ball {
+    background: #FF5722;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    position: absolute;
+    top: -9px;
+    left: -18px;
+    transition: ease 1s;
+    color: #fff;
+    text-align: center;
+}
+
+.bText {
+    font-size: 10px;
+    margin: 3px;
+    transform: rotate(-90deg);
+}
+
+.min {
+    height: 4px;
+    width: 110px;
+    background: gray;
+    position: absolute;
+    top: calc(50% - 2px);
+    right: 50%;
+    border-radius: 15px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+}
+
+.hour {
+    height: 6px;
+    width: 75px;
+    background: gray;
+    position: absolute;
+    top: calc(50% - 3px);
+    right: 50%;
+    border-radius: 15px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+}
+
+.center_ball {
+    height: 12px;
+    width: 12px;
+    background: #65EEB7;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 6px);
+    right: calc(50% - 6px);
+}
